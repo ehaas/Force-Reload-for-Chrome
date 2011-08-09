@@ -1,0 +1,8 @@
+{
+  "name": "Force Reload",
+  "version": "0.0.1",
+  "minimum_chrome_version": "14",
+  "description": "Force reload on specified pages",
+  "background_page": "background.html",
+  "permissions": ["experimental"]
+}

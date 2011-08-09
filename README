@@ -1,0 +1,11 @@
+Requires experimental extension API support (steps 1 and 4): http://code.google.com/chrome/extensions/experimental.html
+
+patterns.txt gets regular expressions, one per line (no / / delimiters), e.g. :
+
+www\.google\.com
+
+
+If a request URL matches the regular expression, we remove the If-Modified-Since and If-Unmodified-Since headers and set Cache-Control: no-cache
+and Pragma: no-cache
+
+Tested and works in Chrome 14.0.835.29 dev
